@@ -5,7 +5,7 @@
 using namespace std;
 
 double func(double y) {
-	return sqrt(pow((2 + y), 2) + sin(2) * (y + 5) + log(y + 5) - pow(y, 3));
+	return sqrt(pow((2 + y), 2) + sin(2) * (y + 5)) + log(y + 5) - pow(y, 3);
 }
 
 int main() {

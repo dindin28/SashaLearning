@@ -20,7 +20,7 @@ int main() {
     else if (x == 0)
         f = (pow(x, 2) - y) / (1 - x * y);
     else {
-        printf("Not value is valid");
+        printf("Not value is valid\n");
         return EXIT_FAILURE;
     };
 

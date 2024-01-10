@@ -11,7 +11,7 @@ int main() {
     scanf("%lf", &x);
 
 
-    printf("Enter y value:");
+    printf("Enter y value: ");
     scanf("%lf", &y);
 
 

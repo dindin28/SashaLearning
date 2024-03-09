@@ -3,15 +3,16 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool calculateFunction(double x, double y, double* f) {
+bool func(double x, double y, double* f) {
     if (x > 0 && (x) * (y) > 1)
         *f = (x + y) / (1 - (x) * (y));
     else if (x == 0)
         *f = (pow(x, 2) - y) / (1 - (x) * (y));
     else {
         printf("No valid value\n");
-        return(false);
+        return false;
     }
+    return true;
 }
 
 int main() {
@@ -23,9 +24,14 @@ int main() {
     printf("Enter y value: ");
     scanf("%lf", &y);
 
-    calculateFunction(&x, &y, &f);
+    double calculated_value;
+    if (func(x, y, &calculated_value)) {
+        printf("The function is equal to = %lf\n", x, y, calculated_value);
+    }
+    else {
+        printf("Not valid arguments for function\n");
+    };
 
-    printf("The function is equal to = %lf\n", f);
 
     return EXIT_SUCCESS;
 }

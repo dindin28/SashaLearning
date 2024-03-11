@@ -9,7 +9,6 @@ bool func(double x, double y, double* f) {
     else if (x == 0)
         *f = (pow(x, 2) - y) / (1 - x * y);
     else {
-        printf("No valid value\n");
         return false;
     }
     return true;

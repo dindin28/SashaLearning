@@ -15,7 +15,7 @@ bool func(double x, double y, double* f) {
 }
 
 int main() {
-    double y, x, f;
+    double y, x;
 
     printf("Enter x value: ");
     scanf("%lf", &x);

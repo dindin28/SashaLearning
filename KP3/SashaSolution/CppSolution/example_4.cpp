@@ -5,7 +5,8 @@
 using namespace std;
 
 int main() {
-    double n, x;
+    double x;
+    int n;
     double result = 0;
 
     cout << "Enter n: ";

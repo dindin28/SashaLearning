@@ -5,7 +5,8 @@
 using namespace std;
 
 int main() {
-    double n, x, y;
+    double x, y;
+    int n;
     double result = 0;
 
     cout << "Enter n: ";
@@ -17,7 +18,7 @@ int main() {
     cout << "Enter y: ";
     cin >> y;
 
-    for (double i = 1; i <= n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         result += pow(i, x) + pow(y, i);
     }
 

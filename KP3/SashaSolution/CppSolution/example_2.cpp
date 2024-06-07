@@ -5,13 +5,13 @@
 using namespace std;
 
 int main() {
-    double n;
+    int n;
     double result = 0;
 
     cout << "Enter n: ";
     cin >> n;
 
-    for (double i = 1; i <= n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         result += i + 1;
     }
 

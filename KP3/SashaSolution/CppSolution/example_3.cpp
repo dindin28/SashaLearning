@@ -4,16 +4,17 @@
 
 using namespace std;
 
-double factorial(double x) {
+int factorial(double x) {
     double sum = 1;
-    for (double i = 1; i <= x; ++i) {
+    for (int i = 1; i <= x; ++i) {
         sum *= i;
     }
     return sum;
-};
+}
 
 int main() {
-    double n, x;
+    double x;
+    int n;
     double result = 0;
 
     cout << "Enter n: ";
@@ -22,7 +23,7 @@ int main() {
     cout << "Enter x: ";
     cin >> x;
 
-    for (double i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; ++i) {
         result += factorial(x);
     }
 

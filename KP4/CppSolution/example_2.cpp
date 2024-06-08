@@ -15,16 +15,12 @@ int main() {
     
     int minIndex = 0;
 
-    for (int i = 1; i < n; ++i) {
-        if (A[i] < A[minIndex]) {
-            minIndex = i;
-        }
-    }
-
     std::cout << "Array after exchange: ";
-    for (int i = minIndex; i < n; ++i) {
+    for (int i = minIndex; i < n - 1; ++i) {
+        A[i] < A[i + 1];
         std::cout << A[i] << " ";
     }
+    A.pop_back();
     std::cout << std::endl;
 
     return EXIT_SUCCESS;

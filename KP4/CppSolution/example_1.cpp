@@ -5,8 +5,6 @@ using namespace std;
 
 int main() {
     int n;
-    int minIndex = 0;
-    int maxIndex = 0;
     cout << "Enter the array size: ";
     cin >> n;
 
@@ -17,6 +15,8 @@ int main() {
         cin >> A[i];
     }
 
+    int minIndex = 0;
+    int maxIndex = 0;
     for (int i = 1; i < n; ++i) {
         if (A[i] < A[minIndex]) {
             minIndex = i;

@@ -14,14 +14,23 @@ int main() {
     }
     
     int minIndex = 0;
+    for (int i = 1; i < n; ++i) {
+        if (A[i] < A[minIndex]) {
+            minIndex = i;
+        }
+    }
 
-    std::cout << "Array after exchange: ";
     for (int i = minIndex; i < n - 1; ++i) {
-        A[i] < A[i + 1];
-        std::cout << A[i] << " ";
+        A[i] = A[i + 1];
     }
     A.pop_back();
+
+    std::cout << "Array after exchange: ";
+    for (int i = 0; i < A.size(); ++i) {
+        std::cout << A[i] << " ";
+    }
     std::cout << std::endl;
+
 
     return EXIT_SUCCESS;
 }

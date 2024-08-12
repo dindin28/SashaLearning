@@ -2,8 +2,6 @@
 #include <cmath>
 
 int main() {
-    int b = 0;
-    int a;
     int n;
 
     do {
@@ -11,17 +9,21 @@ int main() {
         std::cin >> n;
 
         if (n <= 0) {
-            std::cout << "Invalid input. 'n' must be a positive integer.\n";
+            std::cout << "Invalid input. Please enter a positive integer.\n";
+            std::cin.clear();
+            std::cin.ignore(32767, '\n');
         }
     } while (n <= 0);
 
+    int sum_a = 0;
 
-    for (int i = 1, sum_a = 0; i <= n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         sum_a += i;
-        if (i == n) {
-            a = pow(sum_a, 2);
-        }
     }
+
+    const int a = pow(sum_a, 2);
+
+    int b = 0;
 
     for (int i = 1; i <= n; ++i) {
         b += pow(i, 2);
